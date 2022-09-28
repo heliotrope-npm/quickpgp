@@ -1,0 +1,16 @@
+{
+  "name": "@heliotrope/quickpgp",
+  "version": "1.0.0",
+  "description": "A command line tool to easily encrypt, decrypt and generate keypairs with OpenPGP.",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heliotrope-npm/quickpgp.git"
+  },
+  "keywords": ["openpgp", "pgp", "crypto", "quickpgp", "cli"],
+  "license": "GNU General Public License 3.0",
+  "bugs": {
+    "url": "https://github.com/heliotrope-npm/quickpgp/issues"
+  },
+  "homepage": "https://github.com/heliotrope-npm/quickpgp#readme"
+}
