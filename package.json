@@ -8,10 +8,20 @@
     "type": "git",
     "url": "git+https://github.com/heliotrope-npm/quickpgp.git"
   },
-  "keywords": ["openpgp", "pgp", "crypto", "quickpgp", "cli"],
+  "keywords": [
+    "openpgp",
+    "pgp",
+    "crypto",
+    "quickpgp",
+    "cli"
+  ],
   "license": "GNU General Public License 3.0",
   "bugs": {
     "url": "https://github.com/heliotrope-npm/quickpgp/issues"
   },
-  "homepage": "https://github.com/heliotrope-npm/quickpgp#readme"
+  "homepage": "https://github.com/heliotrope-npm/quickpgp#readme",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "meow": "^10.1.4"
+  }
 }
