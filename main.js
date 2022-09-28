@@ -4,14 +4,14 @@ import meow from 'meow';
 
 const cli = meow(`
 	Usage
-	  $ quickpgp <operation>: ["encrypt", "decrypt", "generate"]
+	  $ ${chalk.cyanBright(`quickpgp`)} <${chalk.greenBright("operation")}>: [${chalk.greenBright("\"encrypt\"")}, ${chalk.greenBright("\"decrypt\"")}, ${chalk.greenBright("\"generate\"")}]
 
 	Options
-	  --save, -s <filePath> Allows you to provide a place to save the response to
+    ${chalk.greenBright("--save")}, ${chalk.greenBright("-s")} <${chalk.greenBright("filePath")}> Allows you to provide a place to save the response to
 
 	Examples
-	  $ quickpgp generate -s keypair.json
-	  Saved quickpgp to keypair.json
+	  $ ${chalk.cyanBright(`quickpgp`)} ${chalk.greenBright("generate -s")} ${chalk.yellow("keypair.json")}
+	  Saved ${chalk.cyanBright(`quickpgp`)} to ${chalk.yellow("keypair.json")}
 `, {
 	importMeta: import.meta,
 	flags: {
@@ -19,6 +19,7 @@ const cli = meow(`
 			type: 'string',
 			alias: 's'
 		}
-	}
+	},
+    description: false
 });
 
